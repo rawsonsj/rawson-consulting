@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Critical Infrastructure Security Advisory">
+
+  <!-- Hero -->
+  <section class="relative min-h-[88vh] flex items-center">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-sky-950 opacity-80"></div>
+    <div class="relative max-w-5xl mx-auto px-6 py-24">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-sky-800 bg-sky-950/50 text-sky-400 text-xs font-medium tracking-wider uppercase mb-8">
+        OT / ICS Security Advisory
+      </div>
+      <h1 class="text-5xl sm:text-6xl font-bold text-white leading-tight max-w-3xl">
+        One unpatched HMI.<br />
+        <span class="text-sky-400">One incident report.</span>
+      </h1>
+      <p class="mt-6 text-xl text-slate-300 max-w-2xl leading-relaxed">
+        Rawson Consulting helps critical infrastructure operators find and close security gaps — before someone else does. Advisory services grounded in real-world OT/ICS expertise, not IT theory.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="/contact" class="px-6 py-3 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-semibold transition-colors">
+          Start a Conversation
+        </a>
+        <a href="/about" class="px-6 py-3 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold transition-colors">
+          About the Consultant
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value props -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-2xl font-bold text-white mb-2">Why Rawson Consulting</h2>
+    <p class="text-slate-400 mb-12 max-w-xl">Most ICS security consultants come from one direction — IT professionals who learned OT, or engineers who learned security. Rawson Consulting brings both.</p>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="p-6 rounded-xl border border-slate-800 bg-slate-900/50">
+        <div class="text-sky-400 text-2xl mb-3">⚡</div>
+        <h3 class="font-semibold text-white mb-2">Operational Context</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Security advice that accounts for uptime requirements, process safety, and the reality that you can't just patch a running turbine.</p>
+      </div>
+      <div class="p-6 rounded-xl border border-slate-800 bg-slate-900/50">
+        <div class="text-sky-400 text-2xl mb-3">🔬</div>
+        <h3 class="font-semibold text-white mb-2">Research-Grade Depth</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Background in critical infrastructure security research at one of the nation's premier national laboratories.</p>
+      </div>
+      <div class="p-6 rounded-xl border border-slate-800 bg-slate-900/50">
+        <div class="text-sky-400 text-2xl mb-3">🛡️</div>
+        <h3 class="font-semibold text-white mb-2">Risk-First Thinking</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">An MBA alongside technical certifications means recommendations are framed in business risk, not just technical findings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectors -->
+  <section class="border-t border-slate-800 bg-slate-900/30 py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-white mb-2">Sectors Served</h2>
+      <p class="text-slate-400 mb-10">Advisory engagements available for qualified critical infrastructure operators.</p>
+      <div class="flex flex-wrap gap-3">
+        {['Energy & Utilities', 'Water & Wastewater', 'Oil & Gas', 'Manufacturing', 'Transportation', 'Government'].map(s => (
+          <span class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 text-sm">{s}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-5xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-3xl font-bold text-white mb-4">Ready to assess your exposure?</h2>
+    <p class="text-slate-400 mb-8 max-w-lg mx-auto">Available engagements are determined on a case-by-case basis. Reach out to discuss your specific needs.</p>
+    <a href="/contact" class="inline-block px-8 py-3 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-semibold transition-colors">
+      Get in Touch
+    </a>
+  </section>
+
+</Layout>
