@@ -21,13 +21,13 @@ import Layout from '../layouts/Layout.astro';
       <!-- Form -->
       <div class="md:col-span-3">
         <form
-          name="contact"
           method="POST"
-          action="/thanks"
-          data-netlify="true"
+          action="https://api.web3forms.com/submit"
           class="space-y-6"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="access_key" value="ba22eae1-e8d3-447c-bfa2-726fef96f5dc" />
+          <input type="hidden" name="redirect" value="https://rawsonconsulting.com/thanks" />
+          <input type="hidden" name="subject" value="New inquiry — Rawson Consulting" />
 
           <div>
             <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Name</label>
