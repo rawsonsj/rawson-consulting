@@ -24,8 +24,9 @@ const currentPath = Astro.url.pathname;
     <!-- Nav -->
     <header class="fixed top-0 inset-x-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur-sm">
       <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" class="text-white font-semibold tracking-tight text-lg hover:text-sky-400 transition-colors">
-          Rawson Consulting
+        <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <img src="/rawson-consulting-logo.svg" alt="Rawson Consulting" class="h-9 w-auto" />
+          <span class="text-white font-semibold tracking-tight text-lg">Rawson Consulting</span>
         </a>
         <div class="flex items-center gap-8 text-sm font-medium">
           <a href="/" class={`transition-colors ${currentPath === '/' ? 'text-sky-400' : 'text-slate-400 hover:text-white'}`}>Home</a>
@@ -43,6 +44,7 @@ const currentPath = Astro.url.pathname;
     <!-- Footer -->
     <footer class="mt-24 border-t border-slate-800 py-10 text-center text-slate-500 text-sm">
       <div class="max-w-5xl mx-auto px-6">
+        <img src="/rawson-consulting-logo.svg" alt="Rawson Consulting" class="h-14 w-auto mx-auto mb-4 opacity-80" />
         <p class="font-medium text-slate-300 mb-1">Rawson Consulting LLC</p>
         <p>Las Vegas, NV &nbsp;·&nbsp; Licensed in Nevada</p>
         <p class="mt-4">&copy; {new Date().getFullYear()} Rawson Consulting LLC. All rights reserved.</p>
