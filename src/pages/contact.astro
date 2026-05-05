@@ -6,135 +6,17 @@ import Layout from '../layouts/Layout.astro';
 
   <section class="max-w-5xl mx-auto px-6 py-20">
 
-    <div class="mb-12">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-sky-800 bg-sky-950/50 text-sky-400 text-xs font-medium tracking-wider uppercase mb-6">
-        Contact
+    <div class="max-w-2xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-700 bg-slate-900/50 text-slate-400 text-xs font-medium tracking-wider uppercase mb-6">
+        Availability
       </div>
-      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">Let's Talk</h1>
-      <p class="text-xl text-slate-300 max-w-xl leading-relaxed">
-        Available engagements are scoped on a case-by-case basis. Describe your situation and we'll determine if there's a fit.
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6">Not Currently Available</h1>
+      <p class="text-xl text-slate-300 leading-relaxed mb-8">
+        Rawson Consulting is not accepting new engagements at this time.
       </p>
-    </div>
-
-    <div class="grid md:grid-cols-5 gap-12">
-
-      <!-- Form -->
-      <div class="md:col-span-3">
-        <form
-          method="POST"
-          action="https://api.web3forms.com/submit"
-          class="space-y-6"
-        >
-          <input type="hidden" name="access_key" value="ba22eae1-e8d3-447c-bfa2-726fef96f5dc" />
-          <input type="hidden" name="redirect" value="https://rawsonconsulting.com/thanks" />
-          <input type="hidden" name="subject" value="New inquiry — Rawson Consulting" />
-
-          <div>
-            <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors"
-              placeholder="Your name"
-            />
-          </div>
-
-          <div>
-            <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors"
-              placeholder="you@organization.com"
-            />
-          </div>
-
-          <div>
-            <label for="organization" class="block text-sm font-medium text-slate-300 mb-2">Organization</label>
-            <input
-              type="text"
-              id="organization"
-              name="organization"
-              class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors"
-              placeholder="Company or agency name"
-            />
-          </div>
-
-          <div>
-            <label for="sector" class="block text-sm font-medium text-slate-300 mb-2">Sector</label>
-            <select
-              id="sector"
-              name="sector"
-              class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 focus:outline-none focus:border-sky-500 transition-colors"
-            >
-              <option value="">Select your sector</option>
-              <option>Energy & Utilities</option>
-              <option>Water & Wastewater</option>
-              <option>Oil & Gas</option>
-              <option>Manufacturing</option>
-              <option>Transportation</option>
-              <option>Government</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="message" class="block text-sm font-medium text-slate-300 mb-2">What are you working on?</label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              rows="5"
-              class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors resize-none"
-              placeholder="Briefly describe your situation or what you're trying to accomplish..."
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="w-full py-3 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-semibold transition-colors"
-          >
-            Send Message
-          </button>
-        </form>
-      </div>
-
-      <!-- Side info -->
-      <div class="md:col-span-2 space-y-8">
-        <div class="p-6 rounded-xl border border-slate-800 bg-slate-900/50">
-          <h3 class="font-semibold text-white mb-3">What to expect</h3>
-          <ul class="space-y-3 text-sm text-slate-400">
-            <li class="flex items-start gap-2">
-              <span class="text-sky-500 mt-0.5">✓</span>
-              Response within 1–2 business days
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-sky-500 mt-0.5">✓</span>
-              Brief discovery call to understand your needs
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-sky-500 mt-0.5">✓</span>
-              Honest assessment of fit before any engagement
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-sky-500 mt-0.5">✓</span>
-              NDA available upon request
-            </li>
-          </ul>
-        </div>
-
-        <div class="p-6 rounded-xl border border-slate-800 bg-slate-900/50">
-          <h3 class="font-semibold text-white mb-3">Confidentiality</h3>
-          <p class="text-sm text-slate-400 leading-relaxed">
-            All inquiries are treated as confidential. Information shared during discovery is never disclosed to third parties.
-          </p>
-        </div>
-      </div>
-
+      <p class="text-slate-400 leading-relaxed">
+        Check back in the future — availability will be updated here when new engagements open up.
+      </p>
     </div>
 
   </section>
